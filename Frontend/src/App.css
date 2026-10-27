@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #eef0ff;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Header */
+
+h1 {
+  background: #b582e8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px 12px 0 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Form */
+
+.form-container {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+.input:focus {
+  border-color: #b582e8;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: #b582e8;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #a46edf;
+}
+
+/* Tabs */
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.active-tab {
+  background: #b582e8 !important;
+  color: white;
+}
+
+/* Task Cards */
+
+.task-card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.task-card h2 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.task-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Action Buttons */
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn,
+.restore-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Edit Button */
+
+.edit-btn {
+  background: #b582e8;
+}
+
+.edit-btn:hover {
+  background: #a46edf;
+}
+
+/* Delete Button */
+
+.delete-btn {
+  background: #d8b4fe;
+}
+
+.delete-btn:hover {
+  background: #c084fc;
+}
+
+/* Restore Button */
+
+.restore-btn {
+  background: #9f68db;
+}
+
+.restore-btn:hover {
+  background: #8b5cf6;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .app {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+.permanent-delete-btn {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ff6b6b;
+  color: white;
+  font-weight: 600;
+}
+
+.permanent-delete-btn:hover {
+  background: #ff4d4d;
+}
+
+/* Status Badge */
+
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Pending */
+
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* In Progress */
+
+.in-progress {
+  background-color: #cfe2ff;
+  color: #084298;
+}
+
+/* Completed */
+
+.completed {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
